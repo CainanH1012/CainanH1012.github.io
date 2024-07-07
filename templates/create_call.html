@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Create New Call</h1>
+<form method="POST">
+    <label for="call_type">Call Type:</label>
+    <input type="text" id="call_type" name="call_type" required>
+    <br>
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" required>
+    <br>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required>
+    <br>
+    <button type="submit">Create Call</button>
+</form>
+{% endblock %}

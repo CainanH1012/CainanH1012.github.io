@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Dispatch Dashboard</h1>
+<p>Welcome, {{ user.username }}! You are now in the Dispatch department.</p>
+<a href="{{ url_for('create_call') }}">Create New Call</a>
+<a href="{{ url_for('manage_calls') }}">Manage Calls</a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Hello, {{ user.username }}! Welcome to your dashboard.</h1>
+<p>Select your department:</p>
+<div class="departments">
+    <a href="{{ url_for('law_enforcement') }}">Law Enforcement</a>
+    <a href="{{ url_for('fire_department') }}">Fire Department</a>
+    <a href="{{ url_for('dispatch') }}">Dispatch</a>
+</div>
+{% endblock %}
