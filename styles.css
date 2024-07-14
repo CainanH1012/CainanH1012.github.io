@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #4CAF50;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: #333;
+    color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-btn:hover {
+    background-color: #555;
+}
+
+.tab-btn.active {
+    background-color: #4CAF50;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #f0f0f0;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.scenario-answer {
+    font-style: italic;
+    color: #888;
+}
+
+#interview-list {
+    margin-top: 20px;
+}
+
+.interview-item {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.interview-item:hover {
+    background-color: #444;
+}
+
+.dob-container {
+    display: flex;
+    align-items: center;
+}
+
+#calculatedAge {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #1a1a1a;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    color: #f0f0f0;
+}
+
+.popup-content h3 {
+    margin-top: 20px;
+    color: #4CAF50;
+}
+
+.popup-content p {
+    margin-bottom: 10px;
+}
+
+.popup-content div {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+.popup-content strong {
+    color: #4CAF50;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #f0f0f0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#popup-details {
+    margin-top: 20px;
+}
+
+#popup-details p {
+    margin-bottom: 10px;
+}
+
+#popup-details strong {
+    color: #4CAF50;
+}
