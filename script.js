@@ -79,11 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.classList.add('interview-item');
                 item.textContent = `${interview.discord} (${interview.discordId})`;
                 
-                const archiveButton = document.createElement('button');
-                archiveButton.textContent = 'Archive';
-                archiveButton.addEventListener('click', () => archiveInterview(interview.discordId));
-                item.appendChild(archiveButton);
-                
                 item.addEventListener('click', () => showInterviewDetails(interview));
                 interviewList.appendChild(item);
             }
