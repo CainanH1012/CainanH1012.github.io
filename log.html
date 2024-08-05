@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER:LC Patrol Reporting System - Logs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="log.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ER:LC Patrol Reporting System - Logs</h1>
+        <div id="passwordContainer">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password">
+            <button id="passwordBtn">Submit</button>
+            <p id="passwordError" class="hidden">Incorrect password. Please try again.</p>
+        </div>
+        <div id="logContainer" class="hidden">
+            <h2>Incident Logs</h2>
+            <div id="logsList">
+                <!-- Logs will be populated here as boxes -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

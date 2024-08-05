@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER:LC Patrol Reporting System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ER:LC Patrol Reporting System</h1>
+        <div class="statistics">
+            <h2>Statistics</h2>
+            <p>Total Reports: <span id="totalReports">0</span></p>
+            <p>Reports Today: <span id="reportsToday">0</span></p>
+            <p>Reports This Week: <span id="reportsWeek">0</span></p>
+            <p>Reports This Month: <span id="reportsMonth">0</span></p>
+        </div>
+        <button id="newReportBtn">Make New Report</button>
+        <button id="viewLogsBtn" onclick="location.href='log.html'">View Logs</button>
+        <div id="reportFormContainer" class="hidden">
+            <form id="reportForm">
+                <h2>New Report</h2>
+                <div class="form-section">
+                    <h3>Unit Information</h3>
+                    <label for="unitNumber">Unit Number:</label>
+                    <input type="text" id="unitNumber" required>
+                    <label for="unitUsername">Unit Username:</label>
+                    <input type="text" id="unitUsername" required>
+                </div>
+                <div class="form-section">
+                    <h3>Incident Information</h3>
+                    <label for="incidentType">Incident Type:</label>
+                    <select id="incidentType">
+                        <option value="Traffic Stop">Traffic Stop</option>
+                        <option value="Pursuit">Pursuit</option>
+                        <option value="Citation">Citation</option>
+                        <option value="Warning">Warning</option>
+                    </select>
+                    <label for="timeDate">Time & Date:</label>
+                    <input type="text" id="timeDate" readonly>
+                    <label for="locationPostal">Location Postal:</label>
+                    <input type="text" id="locationPostal" required>
+                    <label for="locationStreet">Street Name:</label>
+                    <input type="text" id="locationStreet" required>
+                </div>
+                <div class="form-section">
+                    <h3>Person(s) Contacted</h3>
+                    <div id="personsContacted">
+                        <input type="text" class="personContacted" placeholder="Username">
+                    </div>
+                    <button type="button" id="addPersonBtn">Add Person</button>
+                </div>
+                <div class="form-section">
+                    <h3>Vehicle Information</h3>
+                    <div id="vehiclesInfo">
+                        <div class="vehicle">
+                            <input type="text" class="vehicleMake" placeholder="Make">
+                            <input type="text" class="vehicleModel" placeholder="Model">
+                            <input type="text" class="vehicleColor" placeholder="Color">
+                            <input type="text" class="vehiclePlate" placeholder="Plate">
+                        </div>
+                    </div>
+                    <button type="button" id="addVehicleBtn">Add Vehicle</button>
+                </div>
+                <div class="form-section">
+                    <h3>Narrative</h3>
+                    <textarea id="narrative" rows="5"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
